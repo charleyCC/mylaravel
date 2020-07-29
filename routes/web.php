@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('app');
+//});
+
+//Route::get('/', 'Web\AppController@getApp')
+//    ->middleware('auth');
+Route::get('/', 'Web\AppController@getApp');
